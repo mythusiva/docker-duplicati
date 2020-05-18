@@ -1,0 +1,8 @@
+version: "3"
+services:
+  duplicati:
+    image: "linuxserver/duplicati"
+    ports:
+      - "${PORT}:8200"
+    volumes:
+      - ./data:/source

@@ -3,6 +3,6 @@ services:
   duplicati:
     image: "linuxserver/duplicati"
     ports:
-      - "${PORT}:8200"
+      - "127.0.0.1:${PORT}:8200"
     volumes:
-      - ./data:/source
+      - /:/source
